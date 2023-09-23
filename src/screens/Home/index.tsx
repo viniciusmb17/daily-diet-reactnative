@@ -1,14 +1,14 @@
-import { Container } from './styles'
 import { Header } from '@components/Header'
+import { Meals } from '@components/Meals'
 import { PercentCard } from '@components/PercentCard'
+import { Container } from './styles'
 
 export function Home() {
   return (
-    <>
-      <Container>
-        <Header />
-        <PercentCard />
-      </Container>
-    </>
+    <Container>
+      <Header />
+      <PercentCard />
+      <Meals />
+    </Container>
   )
 }
