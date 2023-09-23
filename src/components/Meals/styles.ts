@@ -2,8 +2,8 @@ import { Plus } from 'phosphor-react-native'
 import styled from 'styled-components/native'
 
 export const Container = styled.View`
+  flex: 1;
   margin-top: 32px;
-  gap: 32px;
 `
 
 export const HeaderContainer = styled.View`
