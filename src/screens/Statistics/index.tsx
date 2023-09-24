@@ -1,10 +1,12 @@
+import { StatusBar } from 'react-native'
+import { useTheme } from 'styled-components/native'
+import { PercentCard } from './components/PercentCard'
 import { Container } from './styles'
-import { Text } from 'react-native'
 
 export function Statistics() {
   return (
     <Container>
-      <Text>Estatísticas</Text>
+      <PercentCard />
     </Container>
   )
 }
