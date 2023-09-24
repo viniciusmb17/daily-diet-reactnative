@@ -29,11 +29,13 @@ export const Subtitle = styled.Text`
   line-height: 18.2px;
 `
 
-export const Icon = styled(ArrowUpRight).attrs(({ theme }) => ({
-  color: theme.COLORS.GREEN_DARK,
-  size: 24,
-}))`
+export const Button = styled.TouchableOpacity`
   position: absolute;
   right: 8px;
   top: 8px;
 `
+
+export const Icon = styled(ArrowUpRight).attrs(({ theme }) => ({
+  color: theme.COLORS.GREEN_DARK,
+  size: 24,
+}))``

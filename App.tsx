@@ -1,13 +1,13 @@
-import { ThemeProvider } from 'styled-components/native'
-import theme from './src/theme'
+import { Loading } from '@components/Loading'
 import {
-  useFonts,
   Nunito_400Regular,
   Nunito_700Bold,
+  useFonts,
 } from '@expo-google-fonts/nunito'
+import { Routes } from '@routes/index'
 import { StatusBar } from 'react-native'
-import { Home } from '@screens/Home'
-import { Loading } from '@components/Loading'
+import { ThemeProvider } from 'styled-components/native'
+import theme from './src/theme'
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Nunito_400Regular, Nunito_700Bold })
@@ -19,7 +19,7 @@ export default function App() {
         backgroundColor={'transparent'}
         translucent
       />
-      {fontsLoaded ? <Home /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </ThemeProvider>
   )
 }
