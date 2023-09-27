@@ -7,6 +7,7 @@ import {
   NewMealText,
   Title,
 } from './styles'
+import { useNavigation, useRoute } from '@react-navigation/native'
 
 export type MealType = {
   name: string
@@ -64,11 +65,17 @@ const DAY_LIST_DATA: DayListData = [
 ]
 
 export function Meals() {
+  const navigation = useNavigation()
+
+  function handleNewMealButton() {
+    navigation.navigate('newMeal')
+  }
+
   return (
     <Container>
       <HeaderContainer>
         <Title>Refeições</Title>
-        <NewMealButton>
+        <NewMealButton onPress={handleNewMealButton}>
           <Icon />
           <NewMealText>Nova refeição</NewMealText>
         </NewMealButton>
