@@ -26,6 +26,19 @@ export const Divider = styled.View`
   background-color: ${({ theme }) => theme.COLORS.GRAY_400};
 `
 
+interface StatusProps {
+  isOnDiet: boolean
+}
+
+export const Status = styled.View<StatusProps>`
+  width: 14px;
+  height: 14px;
+
+  border-radius: 999px;
+  background-color: ${({ theme, isOnDiet }) =>
+    isOnDiet ? theme.COLORS.GREEN_MID : theme.COLORS.RED_MID};
+`
+
 export const MealText = styled.Text.attrs(() => ({
   numberOfLines: 1,
   ellipsizeMode: 'tail',
@@ -40,17 +53,4 @@ export const MealText = styled.Text.attrs(() => ({
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
   font-size: 16px;
   line-height: 20.8px;
-`
-
-interface StatusProps {
-  isOnDiet: boolean
-}
-
-export const Status = styled.View<StatusProps>`
-  width: 14px;
-  height: 14px;
-
-  border-radius: 999px;
-  background-color: ${({ theme, isOnDiet }) =>
-    isOnDiet ? theme.COLORS.GREEN_MID : theme.COLORS.RED_MID};
 `

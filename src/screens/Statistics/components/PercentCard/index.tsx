@@ -1,5 +1,5 @@
-import { Button, Container, Icon, Subtitle, Title } from './styles'
 import { useNavigation } from '@react-navigation/native'
+import { Button, Container, Icon, Subtitle, Title } from './styles'
 
 export function PercentCard() {
   const navigation = useNavigation()
