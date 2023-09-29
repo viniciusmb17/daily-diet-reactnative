@@ -2,8 +2,10 @@ import { TextInput } from 'react-native'
 import styled, { css } from 'styled-components/native'
 
 export const Container = styled.View`
-  height: 70px;
-  gap: 8px;
+  flex: 1;
+  min-height: 70px;
+  max-height: 70px;
+  gap: 4px;
   align-self: stretch;
 `
 
