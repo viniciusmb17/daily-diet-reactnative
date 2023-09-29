@@ -27,9 +27,6 @@ export const InputContainer = styled(TextInput).attrs(({ theme }) => ({
     font-size: ${theme.FONT_SIZE.MD}px;
   `}
 
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
   border-radius: 6px;
   padding: 14px;
   align-items: center;
